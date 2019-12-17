@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Overlay_Clock",
+  "version": "1.0",
+
+  "description": "Adds clock overlay to Firefox browser",
+
+  "icons": {
+    "48": "icons/overlayclock-48.png",
+    "96": "icons/overlayclock-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["overlayclock.js"]
+    }
+  ]
+
+}
